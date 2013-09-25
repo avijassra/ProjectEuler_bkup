@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FSharp", "FSharp", "{4D3AB6DF-7FB4-407D-B148-AE8260EB7A51}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Problem0001", "Problem0001\Problem0001.fsproj", "{607DB7E6-8AF8-44AD-AE98-69A1BC64FD6C}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Problem0002", "Problem0002\Problem0002.fsproj", "{BAE01DE2-A5D1-4679-AB97-B23CB3EF6FE3}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Problem0003", "Problem0003\Problem0003.fsproj", "{AB2F933B-FAF7-4600-81D3-6AFADA4B48E3}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Problem0004", "Problem0004\Problem0004.fsproj", "{9EF95D40-F524-433E-AA75-90CC48B7DA57}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Problem0006", "Problem0006\Problem0006.fsproj", "{863E3A02-A804-4124-8936-96F0E29FEAE2}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Problem0005", "Problem0005\Problem0005.fsproj", "{2990FF3F-CE25-40ED-B6FD-DAB8A95B28AE}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = CACloud.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{607DB7E6-8AF8-44AD-AE98-69A1BC64FD6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{607DB7E6-8AF8-44AD-AE98-69A1BC64FD6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{607DB7E6-8AF8-44AD-AE98-69A1BC64FD6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{607DB7E6-8AF8-44AD-AE98-69A1BC64FD6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAE01DE2-A5D1-4679-AB97-B23CB3EF6FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE01DE2-A5D1-4679-AB97-B23CB3EF6FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE01DE2-A5D1-4679-AB97-B23CB3EF6FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE01DE2-A5D1-4679-AB97-B23CB3EF6FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB2F933B-FAF7-4600-81D3-6AFADA4B48E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB2F933B-FAF7-4600-81D3-6AFADA4B48E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB2F933B-FAF7-4600-81D3-6AFADA4B48E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB2F933B-FAF7-4600-81D3-6AFADA4B48E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EF95D40-F524-433E-AA75-90CC48B7DA57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EF95D40-F524-433E-AA75-90CC48B7DA57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EF95D40-F524-433E-AA75-90CC48B7DA57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EF95D40-F524-433E-AA75-90CC48B7DA57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{863E3A02-A804-4124-8936-96F0E29FEAE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{863E3A02-A804-4124-8936-96F0E29FEAE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{863E3A02-A804-4124-8936-96F0E29FEAE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{863E3A02-A804-4124-8936-96F0E29FEAE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2990FF3F-CE25-40ED-B6FD-DAB8A95B28AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2990FF3F-CE25-40ED-B6FD-DAB8A95B28AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2990FF3F-CE25-40ED-B6FD-DAB8A95B28AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2990FF3F-CE25-40ED-B6FD-DAB8A95B28AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{607DB7E6-8AF8-44AD-AE98-69A1BC64FD6C} = {4D3AB6DF-7FB4-407D-B148-AE8260EB7A51}
+		{BAE01DE2-A5D1-4679-AB97-B23CB3EF6FE3} = {4D3AB6DF-7FB4-407D-B148-AE8260EB7A51}
+		{AB2F933B-FAF7-4600-81D3-6AFADA4B48E3} = {4D3AB6DF-7FB4-407D-B148-AE8260EB7A51}
+		{9EF95D40-F524-433E-AA75-90CC48B7DA57} = {4D3AB6DF-7FB4-407D-B148-AE8260EB7A51}
+		{863E3A02-A804-4124-8936-96F0E29FEAE2} = {4D3AB6DF-7FB4-407D-B148-AE8260EB7A51}
+		{2990FF3F-CE25-40ED-B6FD-DAB8A95B28AE} = {4D3AB6DF-7FB4-407D-B148-AE8260EB7A51}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal

@@ -10,7 +10,8 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 [<EntryPoint>]
 let main argv =
- 
+
+(* 
     let fabList = 
       // Create a mutable list, so that we can add elements 
       // (this corresponds to standard .NET 'List<T>' type)
@@ -30,7 +31,25 @@ let main argv =
         fabList
             |> Seq.filter (fun x -> x % 2 = 0) 
             |> Seq.sum 
+*)
 
+    // Create a mutable list, so that we can add elements 
+    // (this corresponds to standard .NET 'List<T>' type)
+    let l = new ResizeArray<_>([1;2])
+
+    let rec fabonacci a b upperLimit = 
+        match a, b with
+            | _, _ when a + b <= upperLimit -> 
+                let c = a + b
+                l.Add(c)
+                fabonacci b c upperLimit
+            | _ -> l
+
+    let sumOfEven =
+        (fabonacci 1 2 4000000)
+            |> List.ofSeq
+            |> Seq.filter (fun x -> x % 2 = 0) 
+            |> Seq.sum 
 
     printfn "The sum of the even-valued terms of the Fibonacci sequence whose values do not exceed four million  is %d" sumOfEven
     System.Console.Read() |> ignore

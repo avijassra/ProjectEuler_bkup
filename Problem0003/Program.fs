@@ -80,7 +80,7 @@ let main argv =
     sw.Stop()
 
 
-    printfn "%A - (with processing time %A)" primeFactorNo  sw.ElapsedMilliseconds
+    printfn "%A - (with processing time %A)" primeFactorNo sw.ElapsedMilliseconds
 
     System.Console.Read() |> ignore
     0 // return an integer exit code

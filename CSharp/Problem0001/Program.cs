@@ -15,6 +15,7 @@
             ProjectEuler.Problem.PrintResult("0001", sum);
         }
 
+        // generate the list of numbers from lower bound to upper down
         private static IList<int> GenerateNumberList(int upperBound, int lowerBound = 0)
         {
             var numberList = new List<int>();

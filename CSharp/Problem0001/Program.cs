@@ -3,16 +3,23 @@
     using System;
     using System.Linq;
     using System.Collections.Generic;
+    using System.Diagnostics;
 
     class Program
     {
         static void Main(string[] args)
         {
+            var stopwatch = new Stopwatch();
+
+            stopwatch.Start();
+
             var sum = GenerateNumberList(1000)
                         .Where(x => x % 3 == 0 || x % 5 == 0)
                         .Sum();
 
-            ProjectEuler.Problem.PrintResult("0001", sum);
+            stopwatch.Stop();
+
+            ProjectEuler.Problem.PrintResult("0001", sum, stopwatch.ElapsedMilliseconds);
         }
 
         // generate the list of numbers from lower bound to upper down

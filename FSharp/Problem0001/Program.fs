@@ -6,10 +6,17 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 *)
 
+open System.Diagnostics
+open ProjectEuler
+
 [<EntryPoint>]
 let main argv = 
     
+    let stopwatch = new Stopwatch()
+
     // Option 1
+    stopwatch.Start()
+    
     let sumOfNoDivisbleBy3or5UnderN n = 
         [for i in 1 .. n-1 -> i]
             |> Seq.filter (fun x -> x%3 = 0 || x%5 = 0)
@@ -19,9 +26,14 @@ let main argv =
 
     let sumOfNoDivisbleBy3or5Under1000 = sumOfNoDivisbleBy3or5UnderN 1000
 
-    ProjectEuler.Problem.PrintResult("0001", sumOfNoDivisbleBy3or5Under1000)
+    stopwatch.Stop()
+
+    Problem.AddResult(sumOfNoDivisbleBy3or5Under1000, stopwatch.ElapsedMilliseconds)
 
     // Option 2
+    stopwatch.Reset();
+    stopwatch.Start();
+
     let sumOfFilteredSeq filterCri n = 
         seq { for i in 1 .. n-1 -> if filterCri i then i else 0 }
             |> Seq.sum
@@ -31,8 +43,11 @@ let main argv =
     let sumOfNoUnder10 = filteredSeqOf3or5 10
 
     let sumOfNoUnder1000 = filteredSeqOf3or5 1000
+    
+    stopwatch.Stop();
 
-    ProjectEuler.Problem.PrintResult("0001", sumOfNoUnder1000)
+    Problem.AddResult(sumOfNoUnder1000, stopwatch.ElapsedMilliseconds);
 
-    System.Console.Read() |> ignore
+    Problem.PrintResult("0001")
+    
     0 // return an integer exit code

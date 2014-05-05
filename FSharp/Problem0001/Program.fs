@@ -19,7 +19,7 @@ let main argv =
 
     let sumOfNoDivisbleBy3or5Under1000 = sumOfNoDivisbleBy3or5UnderN 1000
 
-    printfn "The sum of all the multiples of 3 or 5 is %d" sumOfNoDivisbleBy3or5Under1000
+    ProjectEuler.Problem.PrintResult("0001", sumOfNoDivisbleBy3or5Under1000)
 
     // Option 2
     let sumOfFilteredSeq filterCri n = 
@@ -32,7 +32,7 @@ let main argv =
 
     let sumOfNoUnder1000 = filteredSeqOf3or5 1000
 
-    printfn "The sum of all the multiples of 3 or 5 is %d" sumOfNoUnder1000
+    ProjectEuler.Problem.PrintResult("0001", sumOfNoUnder1000)
 
     System.Console.Read() |> ignore
     0 // return an integer exit code

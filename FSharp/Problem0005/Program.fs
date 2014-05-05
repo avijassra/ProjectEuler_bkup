@@ -8,9 +8,12 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 [<EntryPoint>]
 let main argv = 
+    // calculate the Greatest Common Factor
     let rec gcf (a: int64) (b: int64) =
         match b with
+            // if b is 0 then return a
             | 0L -> a
+            // if b is not 0, then 
             | _ -> gcf b (a%b)
 
     let lcm (a: int64) (b: int64) =
@@ -26,8 +29,16 @@ let main argv =
     let generateListTo m =
         [for i in 1L .. m -> i]
 
+        // create diagnostics stopwatch
+    let sw = System.Diagnostics.Stopwatch()
+    // start the stopwatch
+    sw.Start() 
+    
     let resolveProblem5 =
-        generateListTo 20L |>  lcmlist
-    printfn "%A" resolveProblem5
+        generateListTo 20L |>  lcmlist 
+    // stop the stopwatch
+    sw.Stop()
+    
+    printfn "%A  - (with processing time %A)" resolveProblem5 sw.ElapsedMilliseconds
     System.Console.Read() |> ignore
     0 // return an integer exit code

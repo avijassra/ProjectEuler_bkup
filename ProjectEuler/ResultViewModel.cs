@@ -12,8 +12,9 @@
         /// </summary>
         /// <param name="answer">The result.</param>
         /// <param name="timeElapsed">The time elapsed.</param>
-        public ResultViewModel(int answer, long timeElapsed)
-        : this(answer.ToString(), timeElapsed)
+		/// <param name="description">The description.</param>
+		public ResultViewModel(int answer, long timeElapsed, string description = null)
+			: this(answer.ToString(), timeElapsed, description)
         {
         }
 
@@ -22,8 +23,9 @@
         /// </summary>
         /// <param name="answer">The result.</param>
         /// <param name="timeElapsed">The time elapsed.</param>
-        public ResultViewModel(int answer, TimeSpan timeElapsed)
-            : this(answer.ToString(), timeElapsed.Milliseconds)
+		/// <param name="description">The description.</param>
+		public ResultViewModel(int answer, TimeSpan timeElapsed, string description = null)
+			: this(answer.ToString(), timeElapsed.Milliseconds, description)
         {
         }
 
@@ -32,11 +34,21 @@
         /// </summary>
         /// <param name="answer">The result.</param>
         /// <param name="timeElapsed">The time elapsed.</param>
-        public ResultViewModel(string answer, long timeElapsed)
+		/// <param name="description">The description.</param>
+		public ResultViewModel(string answer, long timeElapsed, string description = null)
         {
+			Description = description;
             Answer = answer;
             TimeElapsed = timeElapsed.ToString();
         }
+
+		/// <summary>
+		/// Gets or sets the description.
+		/// </summary>
+		/// <value>
+		/// The description.
+		/// </value>
+		public string Description { get; set; }
 
         /// <summary>
         /// Gets or sets the answer.

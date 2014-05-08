@@ -11,15 +11,30 @@
         {
             var stopwatch = new Stopwatch();
 
-            stopwatch.Start();
+			// OPTION 1
+			stopwatch.Start();
 
-            var sum = GenerateNumberList(1000)
+			var listSum = GenerateNumberList(1000)
                         .Where(x => x % 3 == 0 || x % 5 == 0)
                         .Sum();
 
             stopwatch.Stop();
 
-            ProjectEuler.Problem.PrintResult("0001", sum, stopwatch.ElapsedMilliseconds);
+			ProjectEuler.Problem.AddResult (listSum, stopwatch.ElapsedMilliseconds, "Using number list");
+
+			// OPTION 2
+			stopwatch.Reset ();
+			stopwatch.Start ();
+
+			var arrSum = GenerateNumberArray (1000)
+						.Where (x => x % 3 == 0 || x % 5 == 0)
+						.Sum ();
+
+			stopwatch.Stop();
+
+			ProjectEuler.Problem.AddResult (arrSum, stopwatch.ElapsedMilliseconds, "Using number array");
+
+            ProjectEuler.Problem.PrintResult("0001");
         }
 
         // generate the list of numbers from lower bound to upper down
@@ -34,5 +49,20 @@
 
             return numberList;
         }
+
+		// generate the array of numbers from lower bound to upper down
+		private static int[] GenerateNumberArray(int upperBound, int lowerBound = 0)
+		{
+			var arrLength = upperBound - lowerBound;
+
+			var numberArr = new int[arrLength];
+
+			for (var i = 0; i < arrLength; i++)
+			{
+				numberArr[i] = lowerBound + i;
+			}
+
+			return numberArr;
+		}
     }
 }

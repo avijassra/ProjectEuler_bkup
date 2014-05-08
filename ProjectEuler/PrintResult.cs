@@ -8,14 +8,19 @@
     {
         static List<ResultViewModel> _results = new List<ResultViewModel>();
 
-        public static void AddResult(int answer, long timeElapsed)
+		public static void AddResult(int answer, long timeElapsed, string description)
         {
-            _results.Add(new ResultViewModel(answer, timeElapsed));
+			AddOptionResult(answer, timeElapsed, description);
         }
+
+		private static void AddOptionResult(int answer, long timeElapsed, string description = null)
+		{
+			_results.Add(new ResultViewModel(answer, timeElapsed, description));
+		}
 
         public static void PrintResult(string problemNumber, int answer, long timeElapsed) 
         {
-            AddResult(answer, timeElapsed);
+			AddOptionResult(answer, timeElapsed);
             PrintResult(problemNumber);
         }
 
@@ -31,7 +36,12 @@
 
             for (var i = 0; i < _results.Count; i++)
             {
-                stringBuilder.AppendFormat("Option {0} -> Answer is {1} ({2})", i, _results[i].Answer, _results[i].TimeElapsed);
+				if (!string.IsNullOrEmpty (_results [i].Description)) {
+					stringBuilder.AppendFormat ("Option: {0}", _results [i].Description);
+					stringBuilder.AppendLine("");
+					stringBuilder.AppendLine ("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+				}
+				stringBuilder.AppendFormat("Answer is {0} (Execution time: {1}ms)", _results[i].Answer, _results[i].TimeElapsed);
                 stringBuilder.AppendLine("");
                 if (_results.Count > 0 && i != _results.Count - 1)
                 {

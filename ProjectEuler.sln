@@ -3,18 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FSharp", "FSharp", "{4D3AB6DF-7FB4-407D-B148-AE8260EB7A51}"
 EndProject
+Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "Problem0001", "FSharp\Problem0001\Problem0001.fsproj", "607DB7E6-8AF8-44AD-AE98-69A1BC64FD6C"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp", "CSharp", "{3E827CA5-5A33-41A4-B592-63E80179D3B4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem0001", "CSharp\Problem0001\Problem0001.csproj", "{5D9D30AA-0206-46F1-BE0D-FA6E05509DE8}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Problem0001", "FSharp\Problem0001\Problem0001.fsproj", "{607DB7E6-8AF8-44AD-AE98-69A1BC64FD6C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler", "ProjectEuler\ProjectEuler.csproj", "{92E336C7-3AD4-4DBE-B236-363059B8F6FF}"
 EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = CACloud.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -33,17 +30,20 @@ Global
 		{92E336C7-3AD4-4DBE-B236-363059B8F6FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92E336C7-3AD4-4DBE-B236-363059B8F6FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		607DB7E6-8AF8-44AD-AE98-69A1BC64FD6C = {4D3AB6DF-7FB4-407D-B148-AE8260EB7A51}
+		{5D9D30AA-0206-46F1-BE0D-FA6E05509DE8} = {3E827CA5-5A33-41A4-B592-63E80179D3B4}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = CSharp\Problem0001\Problem0001.csproj
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = CACloud.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{607DB7E6-8AF8-44AD-AE98-69A1BC64FD6C} = {4D3AB6DF-7FB4-407D-B148-AE8260EB7A51}
-		{5D9D30AA-0206-46F1-BE0D-FA6E05509DE8} = {3E827CA5-5A33-41A4-B592-63E80179D3B4}
-	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Problem0013\Problem0013.fsproj
 	EndGlobalSection
 EndGlobal

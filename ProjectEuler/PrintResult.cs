@@ -31,7 +31,7 @@
 			stringBuilder.AppendFormat("Problem {0}", problemNumber);
 			stringBuilder.AppendLine("");
 			stringBuilder.AppendLine("--------------------------------------------------------------------------------");
-			stringBuilder.AppendLine(ProjectEulerProblems._0001);
+			stringBuilder.AppendLine(ProjectEulerProblems.ResourceManager.GetString(problemNumber));
 			stringBuilder.AppendLine("********************************************************************************");
 
 			for (var i = 0; i < _results.Count; i++)

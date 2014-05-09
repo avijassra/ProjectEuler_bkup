@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler", "ProjectEule
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem0002", "CSharp\Problem0002\Problem0002.csproj", "{F38F0435-6773-4F7E-A92D-5766120DADD2}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Problem0002", "FSharp\Problem0002\Problem0002.fsproj", "{BAE01DE2-A5D1-4679-AB97-B23CB3EF6FE3}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = CACloud.vsmdi
@@ -38,12 +40,17 @@ Global
 		{F38F0435-6773-4F7E-A92D-5766120DADD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F38F0435-6773-4F7E-A92D-5766120DADD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F38F0435-6773-4F7E-A92D-5766120DADD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAE01DE2-A5D1-4679-AB97-B23CB3EF6FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE01DE2-A5D1-4679-AB97-B23CB3EF6FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE01DE2-A5D1-4679-AB97-B23CB3EF6FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE01DE2-A5D1-4679-AB97-B23CB3EF6FE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{607DB7E6-8AF8-44AD-AE98-69A1BC64FD6C} = {4D3AB6DF-7FB4-407D-B148-AE8260EB7A51}
+		{BAE01DE2-A5D1-4679-AB97-B23CB3EF6FE3} = {4D3AB6DF-7FB4-407D-B148-AE8260EB7A51}
 		{5D9D30AA-0206-46F1-BE0D-FA6E05509DE8} = {3E827CA5-5A33-41A4-B592-63E80179D3B4}
 		{F38F0435-6773-4F7E-A92D-5766120DADD2} = {3E827CA5-5A33-41A4-B592-63E80179D3B4}
 	EndGlobalSection

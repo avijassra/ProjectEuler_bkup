@@ -34,6 +34,23 @@
 
 			ProjectEuler.Problem.AddResult (arrSum, stopwatch.ElapsedMilliseconds, "Using number array");
 
+			// OPTION 3
+			stopwatch.Reset ();
+
+			stopwatch.Start ();
+
+			var sum = 0;
+
+			for(var i = 0; i < 1000000; i++) {
+				if (i % 3 == 0 || i % 5 == 0) {
+					sum += i;
+				}
+			}
+
+			stopwatch.Stop ();
+
+			ProjectEuler.Problem.AddResult (sum, stopwatch.ElapsedMilliseconds, "Using for loop");
+
             ProjectEuler.Problem.PrintResult("0001");
         }
 

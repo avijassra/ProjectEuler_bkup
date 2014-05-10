@@ -1,24 +1,24 @@
 ﻿namespace Problem0001
 {
-    using System;
-    using System.Linq;
-    using System.Collections.Generic;
-    using System.Diagnostics;
+	using System;
+	using System.Linq;
+	using System.Collections.Generic;
+	using System.Diagnostics;
 
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var stopwatch = new Stopwatch();
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			var stopwatch = new Stopwatch();
 
 			// OPTION 1
 			stopwatch.Start();
 
 			var listSum = GenerateNumberList(1000)
-                        .Where(x => x % 3 == 0 || x % 5 == 0)
-                        .Sum();
+						.Where(x => x % 3 == 0 || x % 5 == 0)
+						.Sum();
 
-            stopwatch.Stop();
+			stopwatch.Stop();
 
 			ProjectEuler.Problem.AddResult (listSum, stopwatch.ElapsedMilliseconds, "Using number list");
 
@@ -34,6 +34,7 @@
 
 			ProjectEuler.Problem.AddResult (arrSum, stopwatch.ElapsedMilliseconds, "Using number array");
 
+<<<<<<< HEAD
 			// OPTION 3
 			stopwatch.Reset ();
 
@@ -53,19 +54,23 @@
 
             ProjectEuler.Problem.PrintResult("0001");
         }
+=======
+			ProjectEuler.Problem.PrintResult("0001");
+		}
+>>>>>>> FETCH_HEAD
 
-        // generate the list of numbers from lower bound to upper down
-        private static IList<int> GenerateNumberList(int upperBound, int lowerBound = 0)
-        {
-            var numberList = new List<int>();
+		// generate the list of numbers from lower bound to upper down
+		private static IList<int> GenerateNumberList(int upperBound, int lowerBound = 0)
+		{
+			var numberList = new List<int>();
 
-            for (var i = lowerBound; i < upperBound; i++)
-            {
-                numberList.Add(i);
-            }
+			for (var i = lowerBound; i < upperBound; i++)
+			{
+				numberList.Add(i);
+			}
 
-            return numberList;
-        }
+			return numberList;
+		}
 
 		// generate the array of numbers from lower bound to upper down
 		private static int[] GenerateNumberArray(int upperBound, int lowerBound = 0)
@@ -81,5 +86,5 @@
 
 			return numberArr;
 		}
-    }
+	}
 }

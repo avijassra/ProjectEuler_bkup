@@ -28,7 +28,7 @@ let main argv =
 
     stopwatch.Stop()
 
-    Problem.AddResult(sumOfNoDivisbleBy3or5Under1000, stopwatch.ElapsedMilliseconds)
+    Problem.AddResult(sumOfNoDivisbleBy3or5Under1000, stopwatch.ElapsedMilliseconds, "option 1")
 
     // Option 2
     stopwatch.Reset();
@@ -46,7 +46,7 @@ let main argv =
     
     stopwatch.Stop();
 
-    Problem.AddResult(sumOfNoUnder1000, stopwatch.ElapsedMilliseconds);
+    Problem.AddResult(sumOfNoUnder1000, stopwatch.ElapsedMilliseconds, "option 2");
 
     Problem.PrintResult("0001")
     

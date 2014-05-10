@@ -34,7 +34,6 @@
 
 			ProjectEuler.Problem.AddResult (arrSum, stopwatch.ElapsedMilliseconds, "Using number array");
 
-<<<<<<< HEAD
 			// OPTION 3
 			stopwatch.Reset ();
 
@@ -54,10 +53,6 @@
 
             ProjectEuler.Problem.PrintResult("0001");
         }
-=======
-			ProjectEuler.Problem.PrintResult("0001");
-		}
->>>>>>> FETCH_HEAD
 
 		// generate the list of numbers from lower bound to upper down
 		private static IList<int> GenerateNumberList(int upperBound, int lowerBound = 0)

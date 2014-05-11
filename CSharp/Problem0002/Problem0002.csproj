@@ -49,7 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\ProjectEuler\ProjectEuler.csproj">
-      <Project>{92e336c7-3ad4-4dbe-b236-363059b8f6ff}</Project>
+      <Project>{92E336C7-3AD4-4DBE-B236-363059B8F6FF}</Project>
       <Name>ProjectEuler</Name>
     </ProjectReference>
   </ItemGroup>

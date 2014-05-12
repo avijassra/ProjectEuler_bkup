@@ -1,4 +1,5 @@
 ﻿using System;
+using ProjectEuler;
 
 namespace Problem0003
 {

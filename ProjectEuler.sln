@@ -63,7 +63,7 @@ Global
 		{C123699B-2DBC-46DA-8919-D18E5C86DD04} = {3E827CA5-5A33-41A4-B592-63E80179D3B4}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = CSharp\Problem0001\Problem0001.csproj
+		StartupItem = CSharp\Problem0002\Problem0002.csproj
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = CACloud.vsmdi

@@ -13,7 +13,7 @@ namespace Problem0002
         {
             Stopwatch stopwatch = new Stopwatch();
 
-            // OPTION1
+			// OPTION 1
             stopwatch.Start();
 
             var sum = GenerateList(4000000)
@@ -23,6 +23,30 @@ namespace Problem0002
             stopwatch.Stop();
 
             ProjectEuler.Problem.AddResult(sum, stopwatch.ElapsedMilliseconds, "By creating list first ");
+
+			// OPTION 2
+			stopwatch.Reset ();
+			stopwatch.Start();
+
+			var prev1 = 1;
+			var prev2 = 2;
+			// prev2 value is 2 which is a even number, so sum starts from 2
+			var sumByLooping = prev2;
+
+			while(prev2 < 4000000) {
+				var sumOf2Nos = prev1 + prev2;
+
+				prev1 = prev2;
+				prev2 = sumOf2Nos;
+
+				if (sumOf2Nos % 2 == 0) {
+					sumByLooping += sumOf2Nos;
+				}
+			}
+
+			stopwatch.Stop();
+
+			ProjectEuler.Problem.AddResult (sumByLooping, stopwatch.ElapsedMilliseconds, "By looping thru numbers as adding only +ve numbers");
 
             ProjectEuler.Problem.PrintResult("0002");
         }

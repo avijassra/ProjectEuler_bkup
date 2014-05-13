@@ -22,7 +22,8 @@ namespace Problem0002
 
             stopwatch.Stop();
 
-            ProjectEuler.Problem.AddResult(sum, stopwatch.ElapsedMilliseconds, "By creating list first ");
+			// By creating list first and reducing list to +ve numbers and finding their sum
+			ProjectEuler.Problem.AddResult(sum, stopwatch.ElapsedMilliseconds, "By creating list first and reducing list to +ve numbers and finding their sum");
 
 			// OPTION 2
 			stopwatch.Reset ();
@@ -46,6 +47,7 @@ namespace Problem0002
 
 			stopwatch.Stop();
 
+			// By looping thru numbers and adding only +ve numbers
 			ProjectEuler.Problem.AddResult (sumByLooping, stopwatch.ElapsedMilliseconds, "By looping thru numbers as adding only +ve numbers");
 
             ProjectEuler.Problem.PrintResult("0002");

@@ -1,13 +1,15 @@
 ﻿using System;
-using ProjectEuler;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Problem0003
 {
-	class MainClass
-	{
-		public static void Main (string[] args)
-		{
-			Console.WriteLine ("Hello World!");
-		}
-	}
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
 }

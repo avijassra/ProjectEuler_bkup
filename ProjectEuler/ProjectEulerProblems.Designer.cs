@@ -87,5 +87,18 @@ namespace ProjectEuler {
                 return ResourceManager.GetString("0002", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Largest prime factor
+        ///Problem 3
+        ///The prime factors of 13195 are 5, 7, 13 and 29.
+        ///
+        ///What is the largest prime factor of the number 600851475143 ?.
+        /// </summary>
+        internal static string _0003 {
+            get {
+                return ResourceManager.GetString("0003", resourceCulture);
+            }
+        }
     }
 }

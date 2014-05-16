@@ -10,17 +10,22 @@
 
 		public static void AddResult(int answer, long timeElapsed, string description)
 		{
-			AddOptionResult(answer, timeElapsed, description);
+			AddOptionResult(answer.ToString(), timeElapsed, description);
 		}
 
-		private static void AddOptionResult(int answer, long timeElapsed, string description = null)
+		public static void AddResult(long answer, long timeElapsed, string description)
+		{
+			AddOptionResult(answer.ToString(), timeElapsed, description);
+		}
+
+		private static void AddOptionResult(string answer, long timeElapsed, string description = null)
 		{
 			_results.Add(new ResultViewModel(answer, timeElapsed, description));
 		}
 
 		public static void PrintResult(string problemNumber, int answer, long timeElapsed) 
 		{
-			AddOptionResult(answer, timeElapsed);
+			AddOptionResult(answer.ToString(), timeElapsed);
 			PrintResult(problemNumber);
 		}
 

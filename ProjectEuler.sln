@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler", "ProjectEule
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem0003", "CSharp\Problem0003\Problem0003.csproj", "{98900D78-7E09-4658-9A09-3BBA33D56BA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem.Common", "CSharp\Problem.Common\Problem.Common.csproj", "{D0A2DF29-A7D6-4FC5-973C-5C6FF76BDA5D}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = CACloud.vsmdi
@@ -56,6 +58,10 @@ Global
 		{98900D78-7E09-4658-9A09-3BBA33D56BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98900D78-7E09-4658-9A09-3BBA33D56BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98900D78-7E09-4658-9A09-3BBA33D56BA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0A2DF29-A7D6-4FC5-973C-5C6FF76BDA5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0A2DF29-A7D6-4FC5-973C-5C6FF76BDA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0A2DF29-A7D6-4FC5-973C-5C6FF76BDA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0A2DF29-A7D6-4FC5-973C-5C6FF76BDA5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +73,7 @@ Global
 		{5D9D30AA-0206-46F1-BE0D-FA6E05509DE8} = {3E827CA5-5A33-41A4-B592-63E80179D3B4}
 		{F38F0435-6773-4F7E-A92D-5766120DADD2} = {3E827CA5-5A33-41A4-B592-63E80179D3B4}
 		{98900D78-7E09-4658-9A09-3BBA33D56BA2} = {3E827CA5-5A33-41A4-B592-63E80179D3B4}
+		{D0A2DF29-A7D6-4FC5-973C-5C6FF76BDA5D} = {3E827CA5-5A33-41A4-B592-63E80179D3B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35

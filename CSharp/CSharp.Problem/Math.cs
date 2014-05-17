@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Problem.Common
+namespace CSharp.Problem
 {
     public static class Math
     {

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Problem.Common")]
+[assembly: AssemblyTitle("CSharp.Problem")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Treliant Risk Advisors, LLC")]
-[assembly: AssemblyProduct("Problem.Common")]
+[assembly: AssemblyProduct("CSharp.Problem")]
 [assembly: AssemblyCopyright("Copyright © Treliant Risk Advisors, LLC 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1f1b2914-b994-4d2e-ba3b-11fa1fd237d6")]
+[assembly: Guid("41e28bb6-136e-4c19-a090-0fb091aedd6e")]
 
 // Version information for an assembly consists of the following four values:
 //

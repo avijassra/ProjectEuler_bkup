@@ -15,7 +15,7 @@ namespace Problem0003
 
             // OPTION 1
             stopwatch.Start();
-            var lpf = Problem.Common.Math.LargestPrimeFactor(600851475143);
+            var lpf = CSharp.Problem.Math.LargestPrimeFactor(600851475143);
             stopwatch.Stop();
 
             ProjectEuler.Problem.AddResult(lpf, stopwatch.ElapsedMilliseconds, "Test");

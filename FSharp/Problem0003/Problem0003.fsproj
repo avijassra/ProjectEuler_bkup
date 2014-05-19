@@ -48,6 +48,13 @@
     <Compile Include="Program.fs" />
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FSharp.Problem\FSharp.Problem.fsproj">
+      <Name>FSharp.Problem</Name>
+      <Project>{86a4365d-c891-4125-9ebd-757f7c6825ed}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>

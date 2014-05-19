@@ -35,7 +35,7 @@ namespace CSharp.Problem
 
             long lpf = 2;
 
-            while (number > lpf)
+            while (System.Math.Sqrt(number) > lpf)
             {
                 if (number % lpf == 0)
                 {
@@ -48,7 +48,7 @@ namespace CSharp.Problem
                 }
             }
 
-            return lpf;
+            return number;
         }
     }
 }

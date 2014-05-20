@@ -51,8 +51,7 @@
   <ItemGroup>
     <ProjectReference Include="..\FSharp.Problem\FSharp.Problem.fsproj">
       <Name>FSharp.Problem</Name>
-      <Project>{86a4365d-c891-4125-9ebd-757f7c6825ed}</Project>
-      <Private>True</Private>
+      <Project>86A4365D-C891-4125-9EBD-757F7C6825ED</Project>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -49,11 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\ProjectEuler\ProjectEuler.csproj">
-      <Project>{92e336c7-3ad4-4dbe-b236-363059b8f6ff}</Project>
+      <Project>{92E336C7-3AD4-4DBE-B236-363059B8F6FF}</Project>
       <Name>ProjectEuler</Name>
     </ProjectReference>
     <ProjectReference Include="..\CSharp.Problem\CSharp.Problem.csproj">
-      <Project>{47032cbd-f605-4ea0-8a0c-aac36ab72f46}</Project>
+      <Project>{47032CBD-F605-4EA0-8A0C-AAC36AB72F46}</Project>
       <Name>CSharp.Problem</Name>
     </ProjectReference>
   </ItemGroup>

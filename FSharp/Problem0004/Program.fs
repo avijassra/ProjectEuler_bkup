@@ -64,9 +64,8 @@ let main argv =
     let number = maxPalindromeNumber 100 999
     // stop the stopwatch
     sw.Stop()
-    
+
     // print number
-    printfn "multple of 3 digit resulting %d  - (with processing time %A)" number sw.ElapsedMilliseconds
-    
-    Console.Read() |> ignore
+    ProjectEuler.Problem.AddResult(number, sw.ElapsedMilliseconds, "multple of 3 digit resulting %d  - (with processing time %A)")
+    ProjectEuler.Problem.PrintResult("0004")
     0 // return an integer exit code

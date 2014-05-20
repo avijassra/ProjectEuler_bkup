@@ -4,14 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>9EF95D40-F524-433E-AA75-90CC48B7DA57</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Problem0004</RootNamespace>
     <AssemblyName>Problem0004</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <Name>Problem0004</Name>
-    <ProductVersion>12.0.0</ProductVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,13 +48,11 @@
   <ItemGroup>
     <ProjectReference Include="..\..\ProjectEuler\ProjectEuler.csproj">
       <Name>ProjectEuler</Name>
-      <Project>{92e336c7-3ad4-4dbe-b236-363059b8f6ff}</Project>
-      <Private>True</Private>
+      <Project>{92E336C7-3AD4-4DBE-B236-363059B8F6FF}</Project>
     </ProjectReference>
     <ProjectReference Include="..\FSharp.Problem\FSharp.Problem.fsproj">
       <Name>FSharp.Problem</Name>
-      <Project>{86a4365d-c891-4125-9ebd-757f7c6825ed}</Project>
-      <Private>True</Private>
+      <Project>86A4365D-C891-4125-9EBD-757F7C6825ED</Project>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

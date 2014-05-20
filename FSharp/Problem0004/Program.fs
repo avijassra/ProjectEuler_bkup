@@ -40,6 +40,7 @@ let main argv =
         // create the seq of all the palidrome numbers create 
         // by multiple two numbers between the limits
         let numbers = seq {
+
             // get first number from the loop
             for i = lowerLimit to upperLimit do
                 // get the second number from the loop

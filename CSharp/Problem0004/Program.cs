@@ -18,7 +18,16 @@ namespace Problem0004
             sw.Stop();
 
             ProjectEuler.Problem.AddResult(maxProduct, sw.ElapsedMilliseconds, "looping thru all 3 digits number and their product, short list Palindrome numbers and find max in them");
-            ProjectEuler.Problem.PrintResult("0004");
+
+			// OPTION 2
+			sw.Reset ();
+			sw.Start();
+			var maxProductFast = ListOfThreeDigitNumbersProductFast();
+			sw.Stop();
+
+			ProjectEuler.Problem.AddResult(maxProductFast, sw.ElapsedMilliseconds, "looping thru 3 digits number where second number is always less \n then first number in every iteration and before checking for is palindrome \n always check if new number is greater then last selected palindrone number.");
+            
+			ProjectEuler.Problem.PrintResult("0004");
         }
 
         public static IEnumerable<int> ListOfThreeDigitNumbersProduct()
@@ -29,18 +38,41 @@ namespace Problem0004
                 {
                     var product = i*j;
 
-                    if (product.CheckPalindrome())
+					if (product.IsPalindrome())
                     {
                         yield return product;
                     }
                 }
             }
         }
+
+		public static int ListOfThreeDigitNumbersProductFast()
+		{
+			var largestPrimeNumber = 0; 
+
+			for (var i = 999; i > 99; i--)
+			{
+				for (var j = 100; j <= i; j++)
+				{
+					var product = i*j;
+
+					if (product > largestPrimeNumber) 
+					{
+						if (product.IsPalindrome())
+						{
+							largestPrimeNumber = product;
+						}
+					}
+				}
+			}
+
+			return largestPrimeNumber;
+		}
     }
 
     public static class Palindrome
     {
-        public static bool CheckPalindrome(this int number)
+		public static bool IsPalindrome(this int number)
         {
             var actualNumber = number;
             var palindromeNumber = 0;

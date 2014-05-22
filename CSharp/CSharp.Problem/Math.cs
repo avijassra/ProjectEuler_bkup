@@ -51,7 +51,7 @@ namespace CSharp.Problem
             return number;
         }
 
-        public static long LargestPrimeFactorFaster(long number)
+        public static long LargestPrimeFactorByDividingBy2InLoopsInitially(long number)
         {
             /*
              * The thing with Project Euler is that there is usually an obvious brute-force method to do the problem, 

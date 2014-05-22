@@ -21,7 +21,7 @@ namespace Problem0003
 
             // OPTION 2
             stopwatch.Start();
-            var lpfFaster = CSharp.Problem.Math.LargestPrimeFactorFaster(600851475143);
+            var lpfFaster = CSharp.Problem.Math.LargestPrimeFactorByDividingBy2InLoopsInitially(600851475143);
             stopwatch.Stop();
             ProjectEuler.Problem.AddResult(lpfFaster, stopwatch.ElapsedMilliseconds, "looping and divide by 2 until it is not divisible by 2 anymore.");
 

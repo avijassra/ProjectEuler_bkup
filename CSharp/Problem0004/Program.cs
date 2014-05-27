@@ -22,7 +22,7 @@ namespace Problem0004
 			// OPTION 2
 			sw.Reset ();
 			sw.Start();
-			var maxProductFast = ListOfThreeDigitNumbersProductFast();
+			var maxProductFast = LargestThreeDigitNumbersProduct();
 			sw.Stop();
 
 			ProjectEuler.Problem.AddResult(maxProductFast, sw.ElapsedMilliseconds, "looping thru 3 digits number where second number is always less \n then first number in every iteration and before checking for is palindrome \n always check if new number is greater then last selected palindrone number.");
@@ -52,7 +52,7 @@ namespace Problem0004
 		}
 
 		// intelligent fast looping
-		public static int ListOfThreeDigitNumbersProductFast()
+		public static int LargestThreeDigitNumbersProduct()
 		{
 			// initialize largest palindrome number variabel
 			var largestPalindromeNumber = 0; 

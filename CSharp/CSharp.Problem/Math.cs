@@ -35,12 +35,11 @@ namespace CSharp.Problem
 
             long lpf = 2;
 
-            while (System.Math.Sqrt(number) > lpf)
+            while (number > lpf)
             {
                 if (number % lpf == 0)
                 {
                     number = number/lpf;
-                    lpf = 2;
                 }
                 else
                 {
@@ -90,7 +89,6 @@ namespace CSharp.Problem
                 if (number % lpf == 0)
                 {
                     number = number / lpf;
-                    lpf = 2;
                 }
                 else
                 {
